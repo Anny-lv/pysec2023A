@@ -2,7 +2,7 @@
 from src.get_log_errors import ErrorLogProcessing
 from constants import ERROR_LOG_PATH
 
-class Main:
+class MainClass:
     """Main class."""
 
     def __init__(self):
