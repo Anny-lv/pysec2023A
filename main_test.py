@@ -1,8 +1,8 @@
+from main import ErrorLogProcessing
 
-import  pytest
-from src.get_log_errors import ErrorLogProcessing
-
-
+def test():
+    """Test the test framework itself."""
+    assert True
 
 def test_get_log_errors():
     """Test get_log_errors."""

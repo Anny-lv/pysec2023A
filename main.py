@@ -1,14 +1,13 @@
 """Main funcftion for running the program."""
-from src.get_log_errors import ErrorLogProcessing
+from get_log_errors import ErrorLogProcessing
 from constants import ERROR_LOG_PATH
 
-class MainClass:
+class MainClass: # pylint: disable=too-few-public-methods
     """Main class."""
 
     def __init__(self):
         """Initialize the class."""
         self.error_log_processing = ErrorLogProcessing()
-        pass
 
     def run(self):
         """Run the program."""
@@ -16,5 +15,5 @@ class MainClass:
         print(f"{error_count} Errors found!")
 
 if __name__ == "__main__":
-    main = Main()
+    main = MainClass()
     main.run()

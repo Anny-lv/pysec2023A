@@ -11,10 +11,17 @@
             "program": "${file}",
             "console": "integratedTerminal",
             "justMyCode": true
+        },
+        {
+            "name": "Python: Current File SRC",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/tests"
+            },
+            "justMyCode": true,
         }
     ],
-    "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}/src;${workspaceFolder}/tests"
-    },
-    "python.envFile": "${workspaceFolder}/.env",
 }
