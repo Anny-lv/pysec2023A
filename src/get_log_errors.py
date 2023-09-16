@@ -7,7 +7,7 @@ class ErrorLogProcessing:
     def __init__(self):
         self.error_count: int = 0
     
-    def get_log_errors(self, path: str) -> tuple(int, List[str]):
+    def get_log_errors(self, path: str) -> tuple[int, List[str]]:
         error_list: List[str] = []
         try:
             # Open the log file for reading
