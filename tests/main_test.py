@@ -11,9 +11,10 @@ def test_get_syslog_errors():
     
     test_dict = ERROR_LOG_PATH_LIST[0]
 
-    error_count, error_list = error_processor.get_log_errors(test_dict)
+    error_count, error_list, warning_list = error_processor.get_log_errors(test_dict)
 
     assert error_count == 6
+    assert len(warning_list) == 0
     assert len(error_list) == 6
 
 def test_get_weblog_errors():
@@ -24,7 +25,8 @@ def test_get_weblog_errors():
     
     test_dict = ERROR_LOG_PATH_LIST[1]
 
-    error_count, error_list = error_processor.get_log_errors(test_dict)
+    error_count, error_list, warning_list = error_processor.get_log_errors(test_dict)
 
     assert error_count == 4
+    assert len(warning_list) == 4
     assert len(error_list) == 4

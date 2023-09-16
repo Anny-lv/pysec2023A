@@ -13,7 +13,7 @@ class MainClass: # pylint: disable=too-few-public-methods
         """Run the program."""
         errors_found = False
         for logfile in ERROR_LOG_PATH_LIST: # Use of list and dictionary
-            error_count, error_set = self.error_log_processing.get_log_errors(logfile)
+            error_count, error_set, warning_set= self.error_log_processing.get_log_errors(logfile)
         if error_set is not None: # Use of Boolean
             errors_found = True
         if errors_found:
