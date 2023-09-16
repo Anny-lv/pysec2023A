@@ -11,9 +11,18 @@ class MainClass: # pylint: disable=too-few-public-methods
 
     def run(self):
         """Run the program."""
-        for logfile in ERROR_LOG_PATH_LIST:
-            error_count, _ = self.error_log_processing.get_log_errors(logfile)
-            print(f"{error_count} Errors found!")
+        errors_found = False
+        for logfile in ERROR_LOG_PATH_LIST: # Use of list and dictionary
+            error_count, error_set = self.error_log_processing.get_log_errors(logfile)
+        if error_set is not None: # Use of Boolean
+            errors_found = True
+        if errors_found:
+            for error in error_set:
+                print(error)
+            print(f"Total {error_count} Errors found!")
+        else:
+            print("No errors found!")
+        
 
 if __name__ == "__main__":
     main = MainClass()
