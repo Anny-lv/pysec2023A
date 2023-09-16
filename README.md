@@ -6,7 +6,7 @@ Used text editor is VS Code.
 Used shell is bash.
 OS is Windows 11.
 
-### Create 2 Python environments:
+### Setup environment:
 
 1. Download and install version 3.11.* and 3.9.0 from python.org
 2. Create virtual environments for each version:
