@@ -2,3 +2,4 @@
 .venv11
 .pyc
 src/__pycache__/
+test/__pycache__/
