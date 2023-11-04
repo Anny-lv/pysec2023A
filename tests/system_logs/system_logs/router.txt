@@ -1,0 +1,10 @@
+2023-10-22 13:15:42 - ROUTER - Connection established from 192.168.1.10 to 203.0.113.1 on port 80.
+2023-10-22 13:17:59 - ROUTER - Warning: Traffic from 203.0.113.1 to 192.168.1.10 on port 443 exceeded allowed limits.
+2023-10-22 13:20:10 - ROUTER - DHCP request received from MAC address AA:BB:CC:DD:EE:FF, assigned IP address 192.168.1.15.
+2023-10-22 13:25:18 - ROUTER - Error: Router rebooted unexpectedly due to a critical software issue.
+2023-10-22 13:30:45 - ROUTER - Configuration change: VLAN 10 added to interface GigabitEthernet0/1.
+2023-10-22 13:35:52 - ROUTER - Warning: High CPU usage detected on the router.
+2023-10-22 13:40:10 - ROUTER - Error: Failed to establish a VPN connection with remote site.
+2023-10-22 13:45:27 - ROUTER - Warning: Insufficient memory, consider upgrading hardware.
+2023-10-22 13:50:15 - ROUTER - Error: Interface GigabitEthernet0/3 is down.
+2023-10-22 13:55:30 - ROUTER - Warning: Suspicious traffic detected on port 22 (SSH).

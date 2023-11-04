@@ -30,3 +30,11 @@ def test_get_weblog_errors():
     assert error_count == 4
     assert len(warning_list) == 4
     assert len(error_list) == 4
+
+def test_get_log_errors():
+    """Test get_log_errors from web log file."""
+    error_processor = ErrorLogProcessing()
+    main_class = MainClass()
+    resullt = main_class.run()
+    
+    assert resullt == None
