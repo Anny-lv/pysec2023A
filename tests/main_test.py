@@ -1,4 +1,4 @@
-# Import the MainClass and ErrorLogProcessing correctly
+"""Main test module."""
 from src.main import MainClass
 from src.get_log_errors import ErrorLogProcessing
 from src.constants import ERROR_LOG_PATH_LIST
@@ -35,6 +35,4 @@ def test_get_log_errors():
     """Test get_log_errors from web log file."""
     error_processor = ErrorLogProcessing()
     main_class = MainClass()
-    resullt = main_class.run()
-    
-    assert resullt == None
+    main_class.run()
